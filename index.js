@@ -5,7 +5,7 @@ function postComment() {
   //<div class="comment"><p>comment</p><p>Posted By: <span class="commenter">commenter</span></p></div>
 
   //create template string
-  var commentTemplate = '<div class="comment"><p><%= comment %></p><p>Posted By: <span class="commenter"><%= commenter %></span></p></div>';
+  var commentTemplate = document.getElementById("comment-template").innerHTML;
   //create template function
   var templateFn = _.template(commentTemplate);
 
